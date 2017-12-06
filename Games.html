@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Technology 2ID60</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <!-- Personal made stylesheet -->
+    <link rel="stylesheet" href="./worldStyle.css" type="text/css">
+  </head>
+
+  <body onload="start();">
+    <!-- Navigation Top Bar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./Continents/Europe.html">Europe</a>
+          <a href="./errorpage.html">Asia</a>
+          <a href="./errorpage.html">Americas</a>
+          <a href="./errorpage.html">Africa</a>
+          <a href="./errorpage.html">Oceania</a>
+        </div>
+      </div>
+      <a href="./index.html">Home</a>
+      <a href="#">Games</a>
+      <a onclick="discover()">Discover</a>
+    </div>
+
+    <!-- Header Image and text -->
+    <div class="header">
+      <h1>Games</h1>
+      <p>Made by: LA Hijl</p>
+    </div>
+
+    <!-- Content of the page
+    Includes all non-header things -->
+    <div class="content">
+      <div class="gamecontainer">
+        <img id="headerFlag">
+        <div class="gameanswers">
+          <!-- These are the answer buttons -->
+          <button id="A" onclick="isCorrect(this)"></button>
+          <button id="B" onclick="isCorrect(this)"></button>
+          <button id="C" onclick="isCorrect(this)"></button>
+          <button id="D" onclick="isCorrect(this)"></button>
+        </div>
+        <!-- The bottom div is used to show score, next button
+             and the guesses -->
+        <div class="bottom">
+          <div>
+            <p id="score">Score: 0</p>
+          </div>
+          <div id="randomButton" onclick="randomize()">
+            Next
+          </div>
+          <div>
+            <p id="guess">Guesses: 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Personal Javascript -->
+    <script src="./myJS.js"></script>
+    <!-- I use custom symbols from fontawesome -->
+    <script src="https://use.fontawesome.com/1e4e14c07b.js"></script>
+  </body>
+</html>
