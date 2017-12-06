@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Technology 2ID60</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <!-- Personal made stylesheet -->
+    <link rel="stylesheet" href="./worldStyle.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Navigation Top Bar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./Continents/Europe.html">Europe</a>
+          <a href="./errorpage.html">Asia</a>
+          <a href="./errorpage.html">Americas</a>
+          <a href="./errorpage.html">Africa</a>
+          <a href="./errorpage.html">Oceania</a>
+        </div>
+      </div>
+      <a href="#">Home</a>
+      <a href="./Games.html">Games</a>
+      <a onclick="discover()">Discover</a>
+    </div>
+
+    <!-- Header Image and text -->
+    <div class="header">
+      <h1>World</h1>
+      <p>Made by: LA Hijl</p>
+    </div>
+
+    <!-- Content of the page
+    Includes all non-header things -->
+    <div class="content">
+      <div class="mainPage">
+        <h1>text</h1>
+        <p>This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.<br>
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.<br>
+          This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.<br>
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a<br>
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Personal Javascript -->
+    <script src="./myJS.js"></script>
+    <!-- I use custom symbols from fontawesome -->
+    <script src="https://use.fontawesome.com/1e4e14c07b.js"></script>
+  </body>
+</html>
