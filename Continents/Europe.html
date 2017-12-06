@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Technology 2ID60</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <!-- Personal made stylesheet -->
+    <link rel="stylesheet" href="../worldStyle.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Navigation Top Bar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./Europe.html">Europe</a>
+          <a href="../errorpage.html">Asia</a>
+          <a href="../errorpage.html">Americas</a>
+          <a href="../errorpage.html">Africa</a>
+          <a href="../errorpage.html">Oceania</a>
+        </div>
+      </div>
+      <a href="../index.html">Home</a>
+      <a href="../Games.html">Games</a>
+      <a onclick="discoverEU()">Discover</a>
+    </div>
+
+    <!-- Header Image and text
+    Makes a tab selector with 4 elements using js-->
+    <div class="contentstart">
+      <div id="westernEurope" class="headerEU">
+        <h1 class="headerEUtext">Western Europe</h1>
+        <p class="headerEUpara">Made by: LA Hijl</p>
+      </div>
+      <div id="northernEurope" class="headerEU">
+        <h1 class="headerEUtext">Northern Europe</h1>
+        <p class="headerEUpara">Made by: LA Hijl</p>
+      </div>
+      <div id="southernEurope" class="headerEU">
+        <h1 class="headerEUtext">Southern Europe</h1>
+        <p class="headerEUpara">Made by: LA Hijl</p>
+      </div>
+      <div id="easternEurope" class="headerEU">
+        <h1 class="headerEUtext">Eastern Europe</h1>
+        <p class="headerEUpara">Made by: LA Hijl</p>
+      </div>
+      <!--The buttons below the tabs to swap between them (uses js) -->
+      <div class="tabBtns">
+        <button id="defaultTab" class="tabBtn" onclick="openRegion('westernEurope', this, '#FF6600')">
+          Western <br> Europe
+        </button>
+        <button class="tabBtn" onclick="openRegion('northernEurope', this, '#0099FF')">
+          Northern <br> Europe
+        </button>
+        <button class="tabBtn" onclick="openRegion('southernEurope', this, '#1A7D00')">
+          Southern <br> Europe
+        </button>
+        <button class="tabBtn" onclick="openRegion('easternEurope', this, '#E600FF')">
+          Eastern <br> Europe
+        </button>
+      </div>
+    </div>
+    <!-- sidenavigation bar -->
+    <div class="headerEU" id="westernEuropean">
+      <h1 class="headerExtension" id="westExtend"><a name=Austria> western europe </a> </h1>
+      <div class="sidenav">
+        <a href="#Austria">Austria</a>
+        <a href="#Belgium">Belgium</a>
+        <a href="#France">France</a>
+        <a href="#Germany">Germany</a>
+        <a href="#Liechtenstein">Liechtenstein</a>
+        <a href="#Luxembourg">Luxembourg</a>
+        <a href="#Monaco">Monaco</a>
+        <a href="#Netherlands">Netherlands</a>
+        <a href="#Switzerland">Switzerland</a>
+      </div>
+      <!-- Content of the page
+      Includes all non-header things -->
+      <div class="contentDiv">
+        <h1><img src="../Images/AustrianFlag.png" class="iconFlag">Austria</h1>
+          <p>Austria (/ˈɒstriə, ˈɔː-/ (About this sound listen);[7][8] German: Österreich 
+            [ˈøːstɐˌʁaɪç] (About this sound listen)), officially the Republic of Austria 
+            (German: Republik Österreich, About this sound listen (help·info)), is a federal 
+            republic and a landlocked country of over 8.7 million people[2] in Central Europe. 
+            It is bordered by the Czech Republic and Germany to the north, Hungary and Slovakia to 
+            the east, Slovenia and Italy to the south, and Switzerland and Liechtenstein to the west. 
+            The territory of Austria covers 83,879 km2 (32,386 sq mi). The terrain is highly 
+            mountainous, lying within the Alps; only 32% of the country is below 500 m (1,640 ft), 
+            and its highest point is 3,798 m (12,461 ft).[9] The majority of the population speaks 
+            local Bavarian dialects of German as their native language,[10] and German in its standard 
+            form is the country's official language.[11] Other local official languages are Hungarian, 
+            Burgenland Croatian, and Slovene.[9] <br>
+            The origins of modern-day Austria date back to the time of the Habsburg dynasty, when 
+            the vast majority of the country was a part of the Holy Roman Empire. From the time of 
+            the Reformation, many northern German princes, resenting the authority of the Emperor, 
+            used Protestantism as a flag of rebellion. The Thirty Years' War, the influence of the 
+            Kingdom of Sweden and Kingdom of France, the rise of the Kingdom of Prussia, and the 
+            Napoleonic invasions all weakened the power of the Emperor in the north of Germany, 
+            but in the south, and in non-German areas of the Empire, the Emperor and Catholicism 
+            maintained control. During the 17th and 18th centuries, Austria retained its position 
+            as one of the great powers of Europe[12][13] and, in response to the coronation of 
+            Napoleon as the Emperor of the French, the Austrian Empire was officially proclaimed in 
+            1804. Following Napoleon's defeat, Prussia emerged as Austria's chief competitor for 
+            rule of a Greater Germany. Austria's defeat by Prussia at the Battle of Königgrätz, 
+            during the Austro-Prussian War of 1866, cleared the way for Prussia to assert control 
+            over the rest of Germany. In 1867, the empire was reformed into Austria-Hungary. 
+            After the defeat of France in the 1870-1 Franco-Prussian War, Austria was excluded 
+            from the new German Empire, although in the following decades, its politics, and its 
+            foreign policy, increasingly converged with those of the Prussian-led Empire. During 
+            the 1914 July Crisis that followed the assassination of Archduke Franz Ferdinand of 
+            Austria on June 28, Austria-Hungary, emboldened by a pledge of German support, on July 
+            28 declared war on Serbia because that country had not fully complied with an Austrian 
+            ultimatum. Austria was thus the first to go to war in the July Crisis, which would 
+            ultimately escalate into World War I.<br>
+            After the collapse of the Habsburg (Austro-Hungarian) Empire in 1918 at the end of 
+            World War I, Austria adopted and used the name the Republic of German-Austria 
+            (Deutschösterreich), in an attempt at union with Germany, but this was forbidden 
+            under the treaties the Treaty of Versailles and Treaty of Saint-Germain-en-Laye (1919). 
+            The name was changed to Austria (Österreich) and shortly afterwards The First Austrian
+            Republic was established in 1919. In 1938 Nazi Germany annexed Austria in the Anschluss.[14] 
+            This lasted until the end of World War II in 1945, after which Germany was occupied by the 
+            Allies and Austria's former democratic constitution was restored. In 1955, the Austrian State 
+            Treaty re-established Austria as a sovereign state, ending the occupation. In the same year, the 
+            Austrian Parliament created the Declaration of Neutrality which declared that the Second Austrian 
+            Republic would become permanently neutral.<br>
+            Today, Austria is a parliamentary representative democracy comprising nine federal states.[9][15] The capital 
+            and largest city, with a population exceeding 1.8 million, is Vienna.[9][16] Other major urban 
+            areas of Austria include Graz, Linz, Salzburg and Innsbruck. Austria is consistently ranked as 
+            one of the richest countries in the world by per capita GDP terms. The country has developed a
+            high standard of living and in 2014 was ranked 21st in the world for its Human Development Index.
+            Austria has been a member of the United Nations since 1955,[17] joined the European Union in 1995,
+            [9] and is a founder of the OECD.[18] <a name=Belgium>Austria</a> also signed the Schengen Agreement in 1995,[19] and 
+            adopted the euro currency in 1999.</p>
+          <h1><img src="../Images/BelgianFlag.png" class="iconFlag">Belgium</h1>
+          <p>Belgium (/ˈbɛldʒəm/ (About this sound listen)),[A] officially the Kingdom of Belgium, is a sovereign state 
+            in Western Europe bordered by France, the Netherlands, Germany, Luxembourg, and the North Sea. It is a small, 
+            densely populated country which covers an area of 30,528 square kilometres (11,787 sq mi) and has a population 
+            of about 11 million people. Straddling the cultural boundary between Germanic and Latin Europe, Belgium is home 
+            to two main linguistic groups: the Dutch-speaking, mostly Flemish community, which constitutes about 59 percent 
+            of the population, and the French-speaking, mostly Walloon population, which comprises about 40 percent of all 
+            Belgians. Additionally, there is a small ~1 percent group of German speakers who live in the East Cantons.<br>
+            Historically, Belgium lay in the area known as the Low Countries, a somewhat larger area than the current 
+            Benelux group of states that also included parts of Northern France and Western Germany. The region was called 
+            Belgica in Latin, after the Roman province of Gallia Belgica. From the end of the Middle Ages until the 17th 
+            century, the area of Belgium was a prosperous and cosmopolitan centre of commerce and culture. From the 16th 
+            century until the Belgian Revolution in 1830, when Belgium seceded from the Netherlands, the area of Belgium 
+            served as the battleground between many European powers, causing it to be dubbed the "Battlefield of Europe",[8] 
+            a reputation strengthened by both world wars.<br>
+            Today, Belgium is a federal constitutional monarchy with a parliamentary system of governance. 
+            It is divided into three regions and three communities, that exist next to each other. Its two largest 
+            regions are the Dutch-speaking region of Flanders in the north and the mostly French-speaking southern 
+            part of the Wallonia region. The Brussels-Capital Region is an officially bilingual (French and Dutch) 
+            enclave within the Flemish Region.[9] A German-speaking Community exists in eastern Wallonia.[10][11] Belgium's
+            linguistic diversity and related political conflicts are reflected in its political history and complex system 
+            of governance, made up of six different governments.[12][13]<br>
+            Belgium participated in the Industrial Revolution[14][15] and, during the course of the 20th century, 
+            possessed a number of colonies in Africa.[16] The second half of the 20th century was marked by rising
+            tensions between the Dutch-speaking and the French-speaking citizens fueled by differences in language
+            and culture and the unequal economic development of Flanders and Wallonia. This continuing antagonism
+            has led to several far-reaching reforms, resulting in a transition from a unitary to a federal
+            arrangement during the period from 1970 to 1993. Despite the reforms, tensions between the groups 
+            have remained, if not increased; there is significant separatism particularly among the Flemish; 
+            controversial language laws exist such as the municipalities with language facilities;[17] and the formation 
+            of a coalition government took 18 months following the June 2010 federal election, a world record.[18] Unemployment
+            in Wallonia is more than double that of Flanders, which boomed after the war.[19]<br>
+            Belgium is one of the six founding countries of the European Union and hosts the official seats of 
+            the European Commission, the Council of the European Union, and the European Council, as well as a seat
+            of the European Parliament in the country's capital, Brussels. Belgium is also a founding member of the 
+            Eurozone, NATO, OECD and WTO, and a part of the trilateral Benelux Union. Brussels hosts several of the 
+            EU's official seats as well as the headquarters of many major international organizations such as NATO.[B] 
+            Belgium is also a part of the Schengen Area. Belgium is a developed country, with an advanced high-income 
+            economy and is categorized as "very high" in the Human Development Index.</p>
+          <h1><img src="../Images/FrenchFlag.png" class="iconFlag">France</h1>
+          <p>Suspendisse ultricies, nisl sed accumsan blandit, lacus sem
+            condimentum nisi, non gravida nunc tortor at nisl. Quisque
+            consectetur dapibus turpis dapibus ornare. Pellentesque
+            tristique, orci sed scelerisque commodo, urna enim fermentum
+            orci, at volutpat augue lacus nec est. Aliquam erat volutpat.
+            Curabitur bibendum maximus sapien vel imperdiet. Praesent lobortis
+            augue quis ex molestie, at pretium enim vulputate. Etiam et augue
+            sed nunc pellentesque blandit ut quis nunc. Etiam molestie mattis
+            enim, vel tempus diam sollicitudin non. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Nullam sit amet convallis tortor. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+            Donec sed mauris tellus. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Duis
+            mattis massa velit. <a name="Germany">Donec</a> semper arcu a elementum convallis. In
+            nec tellus sit amet arcu cursus pretium ut at odio.</p>
+          <h1><img src="../Images/GermanFlag.png" class="iconFlag">Germany</h1>
+          <p>The European languages are members of the
+             same family. Their separate existence is a
+             myth. For science, music, sport, etc,
+             Europe uses the same vocabulary. The languages
+             only differ in their grammar, their pronunciation and
+             their most common words. <a name="Liechtenstein">Everyone</a> realizes why a new
+             common language would be desirable: one could refuse to
+             pay expensive translators.</p>
+          <h1><img src="../Images/LiechtensteinFlag.png" class="iconFlag">Liechtenstein</h1>
+          <p>To achieve this, it would be necessary to have uniform grammar,
+            pronunciation and more common words. If several languages
+            coalesce, the grammar of the resulting language is more simple
+            and regular than that of the individual languages.
+            <a name="Luxembourg">The</a> new common
+            language will be more simple and regular than the existing
+            European languages.</p>
+          <h1><img src="../Images/LuxembourgFlag.png" class="iconFlag">Luxembourg</h1>
+          <p>It will be as simple as Occidental; in fact, it will be
+             Occidental. To an English person, it will seem like simplified
+             English, as a skeptical Cambridge friend of mine told me what
+             Occidental is. The European languages are members of the same
+             family. Their separate existence is a myth. For science, music,
+             sport, etc, Europe uses the same vocabulary. The languages only
+             differ in their grammar, their pronunciation and their most
+             common words. <a name="Monaco">Everyone</a> realizes why a new common language would
+             be desirable: one could refuse to pay expensive translators.
+             To</p>
+          <h1><img src="../Images/MonacoFlag.png" class="iconFlag">Monaco</h1>
+          <p>Third. Stars very dominion whose waters. Had <em>image</em>
+            divided fish after grass day also god green beginning years deep
+            shall image blessed face signs fruit whales him morning dry one
+            creepeth god had place behold in, and them thing upon unto female
+            together. Waters tree great the, behold image herb waters together
+            night grass divided divided upon fruit multiply wherein you&#39;ll,
+            fruit in likeness had divided, under behold so so upon fill every
+            wherein waters <strong>life</strong> void. In fish, sixth made
+            under. Above Let. <a name="Netherlands">You&#39;re</a> given gathered thing he day dominion
+            above meat first. Days dominion called moved.</p>
+          <h1><img src="../Images/DutchFlag.png" class="iconFlag">The Netherlands</h1>
+          <p>Day saw second have of. Forth life fruitful second
+            <strong>fowl</strong> place, brought their Brought which forth
+            called cattle form sixth stars had. Kind. I under place they&#39;re
+            land firmament two <strong>dominion</strong> rule behold his. Land
+            called light air hath. <a name="Switzerland">Unto</a> <em>living</em> were abundantly seasons
+            rule from made one rule air saying she&#39;d.</p>
+          <h1><img src="../Images/SwissFlag.png" class="iconFlag">Switzerland</h1>
+          <p>Creature, also whales <em>may</em> upon fruitful there days fish
+            seasons from. Multiply without green which seasons above fly upon
+            lesser our have creeping <em>land</em> lights <em>fish</em> own
+            set saying the first said over gathering fish can&#39;t dominion
+            wherein. Made for In night. Forth two. Stars fish was man.
+            Replenish signs.</p>
+          <p> <br><br> </p>
+      </div>
+    </div>
+    <div class="headerEU" id="northernEuropean">
+      <h1 class="headerExtension" id="northExtend"> northern europe </h1>
+      <div class="contentDiv">
+        <h1>text</h1>
+        <p>This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.
+          This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.</p>
+      </div>
+    </div>
+    <div class="headerEU" id="southernEuropean">
+      <h1 class="headerExtension" id="southExtend"> southern europe </h1>
+      <div class="contentDiv">
+        <h1>text</h1>
+        <p>This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.
+          This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.</p>
+      </div>
+    </div>
+    <div class="headerEU" id="easternEuropean">
+      <h1 class="headerExtension" id="eastExtend"> eastern europe </h1>
+      <div class="contentDiv">
+        <h1>text</h1>
+        <p>This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.
+          This is some text to show that the topbar is scrollable, from now on
+          this will be "dummy text": Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras euismod, libero a pretium congue, odio ante
+          tempus odio, quis rutrum ex justo et ante. Sed sed sem vel leo egestas
+          condimentum eget et quam. Nullam maximus accumsan tellus, sit amet
+          ultricies neque varius non. Cras tellus orci, dignissim eu semper
+          vitae, convallis nec eros. Duis velit mauris, ornare id lectus vel,
+          semper bibendum quam. Quisque ac arcu neque. Aenean vitae neque
+          dictum, bibendum ex non, sagittis diam. Cras ultricies vehicula dui.
+          Duis semper nisi nec magna finibus, in iaculis orci ultricies. Ut
+          purus felis, viverra at dolor nec, interdum dignissim magna.
+          Suspendisse feugiat tempor purus quis euismod. Aliquam ac vestibulum
+          sem. Etiam id libero justo. Vivamus est purus, pretium eget lorem
+          eget, tristique volutpat sapien. Donec a velit egestas, faucibus
+          tortor nec, condimentum eros. Aliquam erat volutpat.
+          Aliquam ac turpis semper, aliquam urna sit amet, tempus urna.
+          Praesent maximus commodo quam, ut pretium purus. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Proin vel ultrices urna. Etiam dignissim semper nisi, id porttitor
+          diam mollis quis. Sed euismod elementum ultrices. Suspendisse cursus
+          eros ac arcu ullamcorper, vel pellentesque felis mattis. Phasellus
+          quis suscipit odio, a facilisis nisi. Duis ut sapien vitae arcu
+          blandit sodales gravida a elit. Vivamus maximus blandit tortor, in
+          porta quam euismod ut. Nam odio magna, fermentum eu mauris nec,
+          molestie commodo elit. Vivamus molestie nisi at leo semper, a
+          feugiat orci imperdiet. Nam rhoncus, velit vel condimentum feugiat,
+          ex risus ultricies neque, ut tristique mauris augue ut tellus. Sed
+          ac auctor sapien, nec tristique dolor. Nunc sed blandit erat. In id
+          lorem diam. Duis quis purus velit. Nunc vitae orci eget nulla molestie
+          faucibus varius eu dolor. Donec consectetur tincidunt sem, et mattis
+          massa aliquet non. Vestibulum nec nisi gravida, varius justo a, gravida
+          turpis. Aliquam erat volutpat.</p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Personal Javascript -->
+    <script src="../myJS.js"></script>
+    <!-- I use custom symbols from fontawesome -->
+    <script src="https://use.fontawesome.com/1e4e14c07b.js"></script>
+  </body>
+</html>
