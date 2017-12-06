@@ -1,356 +1,379 @@
-/*Discover Button Functionality
-  First, arrays are made (from homepage and all subfolders)
-  Then identical functions are used which are used in subfolders */
-let countryList = [
-  './index.html',
-  './Continents/Europe.html',
-  './Games.html'
-];
-function discover() {
-  /* Gets random page from the array */
-  let rand = Math.floor(Math.random() * countryList.length);
-  parent.location = countryList[rand];
-  return false;
+/* ALL PAGES */
+body, html {
+  width: 100%;
+  margin: 0;
+  background-color: #D5D5D5;
 }
 
-/* Handles the main navigation dropdown */
-$('.dropbtn').on('click', () => {
-  $('.dropdown-content').toggle();
-});
-
-
-
-/* EUROPE PAGE FUNCTIONALITY */
-/* Hides all tabs by default except the defaultTab
-  See openRegion() for more explanation about the click */
-$('.headerEU').hide();
-$('#defaultTab').click();
-
-/* This is the same random page finder as before,
-  only this time we start from a subfolder and thus
-  need another relative path to the pages */
-let countryListEU = [
-  '../index.html',
-  './Europe.html',
-  '../Games.html'
-];
-function discoverEU() {
-  let rand = Math.floor(Math.random() * countryList.length);
-  parent.location = countryListEU[rand];
-  return false;
+/* Navbar container */
+.navbar {
+  background-color: #FF6600;
+  font-family: sans-serif;
+  overflow: hidden;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  min-width: 400px;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
-/* Tabheader functionality */
-function openRegion(region, ele, color) {
-  /* Hides all headers */
-  $('.headerEU').hide();
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 21px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+}
 
-  /* Sets button colors back to normal */
-  let tabs;
-  let i;
-  tabs = document.getElementsByClassName("tabBtn");
-  for (i = 0; i < tabs.length; i++) {
-    tabs[i].style.backgroundColor = "";
-  }
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-  /* Displays the element that was called along with its content */
-  let content = region + "an";
-  document.getElementById(content).style.display = "block"
-  document.getElementById(region).style.display = "block";
-  ele.style.backgroundColor = color;
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 21px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+/* Change background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF9955;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #FF9955;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #FF6600;
+  cursor: pointer;
+}
+
+/* Styles the content
+   moves it into right position */
+.content {
+  padding-top: 250px;
+  padding-left: 10px;
+}
+.content h1 {
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.contentstart {
+  padding-top: 49px;
+}
+.contentDiv, .mainPage {
+  padding-top: 30px;
+  float: left;
+  color: #000000;
+  text-align: left;
+}
+.contentDiv {
+  margin-left: 100px;
+}
+.contentDiv div {
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 1px 1px 0 #000000;
+  min-width: 100px;
 }
 
 
 
-/* GAMES CODE */
-// Startup code for the game page
-function start() {
-  chooseFlags();
+
+
+/* HOMEPAGE */
+/* Styles the header picture
+and its contents*/
+.header {
+  background: url(https://imgur.com/FUm1alb.jpeg) no-repeat center center;
+  background: cover;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #C85000;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  height: 200px;
+  width: 100%;
+}
+.header h1 {
+  color: #FFFFFF;
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 100px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.header p {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  min-width: 100px;
 }
 
-// List containing all the flag image locations
-let flagList = [
-  './images/AustrianFlag.png',
-  './images/BelgianFlag.png',
-  './images/DutchFlag.png',
-  './images/FrenchFlag.png',
-  './images/GermanFlag.png',
-  './images/LiechtensteinFlag.png',
-  './images/LuxembourgFlag.png',
-  './images/MonacoFlag.png',
-  './images/SwissFlag.png'
-];
 
-//This chooseFlags() gets run when the games page is loaded
-function chooseFlags() {
-  /* We choose a random flag from the flagList
-  and display it at the #headerFlag position */
-  let flagGuess;
-  let rand = Math.floor(Math.random() * flagList.length);
-  flagGuess = flagList[rand];
-  $("#headerFlag").attr('src', flagGuess);
 
-  /* We run chooseAnswers to set the buttons below
-  the main flag */
-  chooseAnswers(flagGuess);
+
+
+/* EUROPE */
+/* Styling for the scrolling sidebar on the Europe page */
+.sidenav {
+  width: 80px;
+  min-width: 50px;
+  z-index: 10;
+  position: fixed;
+  top: 476px;
+  left: 4px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #FF9955;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: block;
+  color: #FFFFFF;
+}
+.sidenav a:hover {
+  color: #FF6600;
+  cursor: pointer;
 }
 
-/* List containing all country names of the countries
-   of which an image is available */
-let countries = [
-  "Austria",
-  "Belgium",
-  "The Netherlands",
-  "France",
-  "Germany",
-  "Liechtenstein",
-  "Luxembourg",
-  "Monaco",
-  "Switzerland"
-];
-
-// The countryNames array holds values for each button
-let countryNames = [];
-
-// The correctAnswer holds the correct flag
-let correctAnswer;
-
-/* chooseAnswers function which sets all buttons */
-function chooseAnswers(flag) {
-  /* First, a switch statement is called to determine the right answer
-     from the flagGuess called in chooseFlags()
-     Each case checks the displayed flag, then pushes the name
-     of said flag into the countryNames array and then deletes it from
-     the countries array to prevent doubles
-     Finally the correct answer is stored into correctAnswer */
-  switch(flag) {
-    case './images/AustrianFlag.png':
-      countryNames.push("Austria");
-      countries.splice(0, 1);
-      correctAnswer = "Austria";
-      break;
-    case './images/BelgianFlag.png':
-      countryNames.push("Belgium");
-      countries.splice(1, 1);
-      correctAnswer = "Belgium";
-      break;
-    case './images/DutchFlag.png':
-      countryNames.push("The Netherlands");
-      countries.splice(2, 1);
-      correctAnswer = "The Netherlands";
-      break;
-    case './images/FrenchFlag.png':
-      countryNames.push("France");
-      countries.splice(3, 1);
-      correctAnswer = "France";
-      break;
-    case './images/GermanFlag.png':
-      countryNames.push("Germany");
-      countries.splice(4, 1);
-      correctAnswer = "Germany";
-      break;
-    case './images/LiechtensteinFlag.png':
-      countryNames.push("Liechtenstein");
-      countries.splice(5, 1);
-      correctAnswer = "Liechtenstein";
-      break;
-    case './images/LuxembourgFlag.png':
-      countryNames.push("Luxembourg");
-      countries.splice(6, 1);
-      correctAnswer = "Luxembourg";
-      break;
-    case './images/MonacoFlag.png':
-      countryNames.push("Monaco");
-      countries.splice(7, 1);
-      correctAnswer = "Monaco";
-      break;
-    case './images/SwissFlag.png':
-      countryNames.push("Switzerland");
-      countries.splice(8, 1);
-      correctAnswer = "Switzerland";
-  }
-
-  /* Next, 3 more answers are needed, so they are chosen
-     at random by a random function which puts those names
-     into the countryNames array and deletes them from
-     countries to prevent duplicates */
-  let ran = Math.floor(Math.random() * countries.length);
-  countryNames.push(countries[ran]);
-  countries.splice(ran, 1);
-  ran = Math.floor(Math.random() * countries.length);
-  countryNames.push(countries[ran]);
-  countries.splice(ran, 1);
-  ran = Math.floor(Math.random() * countries.length);
-  countryNames.push(countries[ran]);
-  countries.splice(ran, 1);
-
-  // The array is then shuffled to get a random display order
-  countryNames = shuffle(countryNames);
-
-  // Finally all answers are put into the buttons
-  document.getElementById("A").innerHTML = countryNames[0];
-  document.getElementById("B").innerHTML = countryNames[1];
-  document.getElementById("C").innerHTML = countryNames[2];
-  document.getElementById("D").innerHTML = countryNames[3];
+/* Styles tab buttons */
+.tabBtn {
+  background-color: #FF9955;
+  color: #FFFFFF;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 25%;
+  min-width: 66px;
+}
+.tabBtn:hover {
+  background-color: #FF8833;
+  cursor: pointer;
 }
 
-/* The shuffle(array) function is used to shuffle
-   an array (used in randomizing the order of the buttons) */
-function shuffle(array) {
-  /* First, variables are declared which will help us later */
-  var current = array.length;
-  var temp;
-  var randIndex;
-
-  /* While loop keeps going untill everything is shuffled */
-  while (0 < current) {
-    /* First, we select a random element */
-    randIndex = Math.floor(Math.random() * current);
-    current -= 1;
-    /* Then we swap that element with the next unshuffled one; */
-    temp = array[current];
-    array[current] = array[randIndex];
-    array[randIndex] = temp;
-  }
-
-  /* Finally, we return the shuffled array */
-  return array;
+/* Makes sure that the buttons stay on
+   the same line */
+.tabBtns {
+  min-width: 330px;
 }
 
-/* The next core is used to "play" the game */
-/* Three variable are declared which will help us:
-   Score: To keep track of the score
-   Guesses: To keep track of remaining Guesses
-   Lock: To prevent the user from guessing more than allowed
-         or to prevent them from guessing when the correct
-         answer is already guessed */
-let score = 0;
-let guesses = 2;
-let lock = false;
-
-/* Used for the flag-guessing game
-   Displays border when guessed with color depending on
-   if it is correct or not */
-function isCorrect(ele) {
-  /* First we check if the game is locked */
-  if (!lock) {
-
-    /* Remove all borders showing previous answers */
-    $(event.currentTarget).siblings().removeClass('correct');
-    $(event.currentTarget).siblings().removeClass('wrong');
-
-    /* Next, we will execute a switch statement which finds which
-       button was pressed. After that has been found it looks in
-       the countryNames array to see if that button holds the name
-       with the correctAnswer.
-       If so: Lock the game and add the guesses leftover to score
-       If not: Keep playing and subtract one from score */
-    switch (ele.id) {
-      case "A":
-        if (countryNames[0] === correctAnswer) {
-          $(event.currentTarget).addClass('correct');
-          lock = true;
-          score += guesses;
-        } else {
-          $(event.currentTarget).addClass('wrong');
-          score -= 1;
-        }
-        break;
-      case "B":
-        if (countryNames[1] === correctAnswer) {
-          $(event.currentTarget).addClass('correct');
-          lock = true;
-          score += guesses;
-        } else {
-          $(event.currentTarget).addClass('wrong');
-          score -= 1;
-        }
-        break;
-      case "C":
-        if (countryNames[2] === correctAnswer) {
-          $(event.currentTarget).addClass('correct');
-          lock = true;
-          score += guesses;
-        } else {
-          $(event.currentTarget).addClass('wrong');
-          score -= 1;
-        }
-        break;
-      case "D":
-        if (countryNames[3] === correctAnswer) {
-          $(event.currentTarget).addClass('correct');
-          lock = true;
-          score += guesses;
-        } else {
-          $(event.currentTarget).addClass('wrong');
-          score -= 1;
-        }
-        break;
-      }
-
-      /* Subtract one from guesses */
-      guesses -= 1;
-
-      /* Check if this was the last guess
-         If so: Lock the game and give all buttons the correct
-         border (meaning one button gets set to .correct and the
-         rest gets set to .wrong), revealing the correct answer */
-      if (guesses == 0) {
-        lock = true;
-        $(event.currentTarget).siblings().addClass('wrong');
-        switch (correctAnswer){
-          case countryNames[0]:
-            $("#A").removeClass('wrong');
-            $("#A").addClass('correct');
-            break;
-          case countryNames[1]:
-            $("#B").removeClass('wrong');
-            $("#B").addClass('correct');
-            break;
-          case countryNames[2]:
-            $("#C").removeClass('wrong');
-            $("#C").addClass('correct');
-            break;
-          case countryNames[3]:
-            $("#D").removeClass('wrong');
-            $("#D").addClass('correct');
-        }
-      }
-
-      /* Update the score and guesses */
-      document.getElementById("score").innerHTML = "Score: " + score;
-      document.getElementById("guess").innerHTML = "Guesses: " + guesses;
-    }
+/* This handles the tabs for the Europe page */
+.headerEU {
+  color: white;
+  background: cover;
+  padding: 10px;
+  text-align: center;
+  height: 300px;
 }
 
-/* This is the reset function for the "NEXT" button
-   it allows users to play more than once and keep track of
-   their score */
-function randomize() {
-  /* First, all borders are removed from the buttons to clear the styling */
-  $(event.currentTarget).parents().siblings().children().removeClass('correct');
-  $(event.currentTarget).parents().siblings().children().removeClass('wrong');
+/* handles the text within the header */
+.headerEUtext , .headerEUpara {
+  color: inherit;
+  text-shadow: -2px 0 #000000, 0 2px #000000, 1px 0 #000000, 0 -1px #000000;
+  font-family: sans-serif;
+}
+.headerEUtext {
+  font-size: 60px;
+  font-weight: 800;
+}
 
-  /* Then, the arrays countries and countryNames are reset */
-  countries = [
-    "Austria",
-    "Belgium",
-    "The Netherlands",
-    "France",
-    "Germany",
-    "Liechtenstein",
-    "Luxembourg",
-    "Monaco",
-    "Switzerland"
-  ];
-  countryNames = [];
+/* This is the extension which shows the title */
+.headerExtension {
+  background: cover;
+  display: block;
+  position: absolute;
+  top: 425px;
+  width: 100%;
+  margin: 0px;
+  left: 0px;
+  text-transform: capitalize;
+}
 
-  /* guesses and lock are also reset to default values
-     note that score does not get reset, as we want to keep counting
-     the score */
-  guesses = 2;
-  lock = false;
+/* Generates icon-sized flags */
+.iconFlag {
+  display: inline-block;
+  height: 15px;
+  width: 30px;
+  padding: 1px 10px;
+  align-content: flex-end;
+}
 
-  /* finally we run the startup again */
-  start();
+/* Creates nice headers for each country */
+.contentDiv h1, .mainPage h1 {
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 5px;
+  background-color: #FF9955;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FF6600;
+}
+
+/* The id's for the tabs */
+#westExtend {
+  background-color: #FF6600;
+}
+#northExtend {
+  background-color: #0099FF;
+}
+#southExtend {
+  background-color: #1A7D00;
+}
+#eastExtend {
+  background-color: #E600FF;
+}
+#westernEurope {
+  background: url(https://imgur.com/DSUaRms.jpeg) no-repeat center center;
+}
+#northernEurope {
+  background: url(https://imgur.com/oA6wbmK.jpeg) no-repeat center center;
+}
+#southernEurope {
+  background: url(https://imgur.com/r4Gf6tr.jpeg) no-repeat center center;
+}
+#easternEurope {
+  background: url(https://imgur.com/F8HlXD1.jpeg) no-repeat center center;
+}
+
+
+
+
+
+/* GAMES */
+/* Main container */
+.gamecontainer {
+  width: 87%;
+  box-shadow: 1px 2px 1px #FF9955;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding-left: 10%;
+  float: left;
+  left: 10%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Styles the answer buttons to match site style */
+.gameanswers button {
+  background-color: #FF9955;
+  color: #FFFFFF;
+  text-align: center;
+  float: center;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 87%;
+  display: block;
+  min-width: 66px;
+  margin-bottom: 5px;
+}
+.gameanswers button:hover {
+  background-color: #FF8833;
+  cursor: pointer;
+}
+
+/* Correct and wrong are used to show the
+   correct and wrong names for the country
+   to which the flag belongs */
+.correct {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #44BB00;
+}
+.wrong {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FF001C;
+}
+
+/* Creates a grid to show score, guesses and
+   hold the "next" button */
+.bottom {
+  display: grid;
+  grid-template: 50px / repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 87%;
+}
+.bottom div p {
+  float: center;
+  text-align: center;
+  font-family: sans-serif;
+  color: #FF6600;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Styles the big flag which is the guessFlag */
+#headerFlag {
+  width: 83%;
+  max-height: 50%;
+  float: center;
+  border: 3px solid #FF9955;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+/* Styles the "next button" */
+#randomButton {
+  background-color: #FF8833;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  float: center;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 66px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+}
+#randomButton:hover {
+  background-color: #FF6600;
+  cursor: pointer;
 }
