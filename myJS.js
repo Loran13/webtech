@@ -70,15 +70,15 @@ function start() {
 
 // List containing all the flag image locations
 let flagList = [
-  './images/AustrianFlag.png',
-  './images/BelgianFlag.png',
-  './images/DutchFlag.png',
-  './images/FrenchFlag.png',
-  './images/GermanFlag.png',
-  './images/LiechtensteinFlag.png',
-  './images/LuxembourgFlag.png',
-  './images/MonacoFlag.png',
-  './images/SwissFlag.png'
+  'https://imgur.com/PYvWqul.png',
+  'https://imgur.com/dQedTem.png',
+  'https://imgur.com/2PX7eqt.png',
+  'https://imgur.com/sZirb99.png',
+  'https://imgur.com/11ag0tC.png',
+  'https://imgur.com/Tkwm6h2.png',
+  'https://imgur.com/o11kxm1.png',
+  'https://imgur.com/o7wuqfl.png',
+  'https://imgur.com/BqG4rAC.png'
 ];
 
 //This chooseFlags() gets run when the games page is loaded
@@ -124,47 +124,47 @@ function chooseAnswers(flag) {
      the countries array to prevent doubles
      Finally the correct answer is stored into correctAnswer */
   switch(flag) {
-    case './images/AustrianFlag.png':
+    case 'https://imgur.com/PYvWqul.png':
       countryNames.push("Austria");
       countries.splice(0, 1);
       correctAnswer = "Austria";
       break;
-    case './images/BelgianFlag.png':
+    case 'https://imgur.com/dQedTem.png':
       countryNames.push("Belgium");
       countries.splice(1, 1);
       correctAnswer = "Belgium";
       break;
-    case './images/DutchFlag.png':
+    case 'https://imgur.com/2PX7eqt.png':
       countryNames.push("The Netherlands");
       countries.splice(2, 1);
       correctAnswer = "The Netherlands";
       break;
-    case './images/FrenchFlag.png':
+    case 'https://imgur.com/sZirb99.png':
       countryNames.push("France");
       countries.splice(3, 1);
       correctAnswer = "France";
       break;
-    case './images/GermanFlag.png':
+    case 'https://imgur.com/11ag0tC.png':
       countryNames.push("Germany");
       countries.splice(4, 1);
       correctAnswer = "Germany";
       break;
-    case './images/LiechtensteinFlag.png':
+    case 'https://imgur.com/Tkwm6h2.png':
       countryNames.push("Liechtenstein");
       countries.splice(5, 1);
       correctAnswer = "Liechtenstein";
       break;
-    case './images/LuxembourgFlag.png':
+    case 'https://imgur.com/o11kxm1.png':
       countryNames.push("Luxembourg");
       countries.splice(6, 1);
       correctAnswer = "Luxembourg";
       break;
-    case './images/MonacoFlag.png':
+    case 'https://imgur.com/o7wuqfl.png':
       countryNames.push("Monaco");
       countries.splice(7, 1);
       correctAnswer = "Monaco";
       break;
-    case './images/SwissFlag.png':
+    case 'https://imgur.com/BqG4rAC.png':
       countryNames.push("Switzerland");
       countries.splice(8, 1);
       correctAnswer = "Switzerland";
